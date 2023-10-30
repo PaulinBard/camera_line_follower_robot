@@ -1,0 +1,7 @@
+counterfile = open("counter.txt")
+count = int(counterfile.read())
+print(count)
+counterfile.close()
+counterfile = open("counter.txt", 'w')
+counterfile.write(str(count+1))
+counterfile.close()
